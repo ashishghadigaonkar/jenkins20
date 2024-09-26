@@ -6,12 +6,12 @@ pipeline {
         
         stage('Build') {
             steps {
-               bat 'javac Hello.java'
+               bat 'javac demo.java'
             }
         }
         stage('Run') {
             steps {
-               bat 'java Hello'
+               bat 'java demo'
             }
         }
     }
